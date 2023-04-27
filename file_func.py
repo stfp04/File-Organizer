@@ -27,3 +27,8 @@ def cmp_files(file1, file2):
 def move_file(file, directory):
     shutil.move(file, directory)
 
+
+def rename(path, name):
+    new_name = os.path.join(path, name)
+    os.renames(path, new_name)
+
